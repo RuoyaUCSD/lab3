@@ -41,4 +41,15 @@ public class ArrayTests {
     int[] input1 = { };
     assertNotEquals(input1, ArrayExamples.reversed(input1));
   }
+
+  @Test
+  public void testAWL() {
+    double[] arr = {-3, -100, 3, -9};
+    assertEquals(-3.0, ArrayExamples.averageWithoutLowest(arr), 0.0001);
+  }
+  @Test
+  public void testAWLRepeatLowest() {
+    double[] arr = {1.0, 1.0, 5.0};
+    assertEquals(3.0, ArrayExamples.averageWithoutLowest(arr), 0.0001);
+  }
 }
