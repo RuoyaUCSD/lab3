@@ -39,7 +39,7 @@ public class ArrayTests {
   @Test
   public void testReversedGivesNewArr() {
     int[] input1 = { };
-    assertNotEquals(input1, ArrayExamples.reversed(input1));
+    assertNotSame(input1, ArrayExamples.reversed(input1));
   }
 
   @Test
